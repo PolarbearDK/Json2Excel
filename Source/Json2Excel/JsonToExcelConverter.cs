@@ -9,6 +9,8 @@ using OfficeOpenXml;
 
 namespace Json2Excel
 {
+	[ArgumentSettings(StartOfArgument = new []{'-'})]
+	[ArgumentDescription("Convert Json file to excel file.")]
 	class JsonToExcelConverter
 	{
 		[ArgumentName("Input", "I")]
